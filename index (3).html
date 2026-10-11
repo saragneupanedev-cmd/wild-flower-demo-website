@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- SEO: the live site's meta description names McKinney — the practice relocated to Melissa in
+     2025 and the body copy says so, but the one line Google actually shows still says the old
+     city. Title, description, canonical and JSON-LD below all say Melissa, on purpose. -->
+<title>Wildflower Women's Center | Melissa, TX OB/GYN</title>
+<meta name="description" content="Board-certified OB/GYN Dr. Tina M. Gingrich offers gynecology, minimally invasive surgery and medical spa care at Wildflower Women's Center in Melissa, TX.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://wildflowerwomenscenter.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Wildflower Women's Center">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Wildflower Women's Center | Melissa, TX OB/GYN">
+<meta property="og:description" content="Dr. Tina M. Gingrich, MD — gynecology, minimally invasive surgery and the Wildflower Medical Spa, now in Melissa, Texas.">
+<meta property="og:url" content="https://wildflowerwomenscenter.com/">
+<meta name="theme-color" content="#32123A">
+
+<!-- Inline favicon: a five-petal wildflower mark, no extra request -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2332123A'/><g fill='%23F1CFE0'><circle cx='16' cy='9.2' r='3.3'/><circle cx='23' cy='14' r='3.3'/><circle cx='20.3' cy='22' r='3.3'/><circle cx='11.7' cy='22' r='3.3'/><circle cx='9' cy='14' r='3.3'/></g><circle cx='16' cy='16' r='3' fill='%237A1B54'/></svg>">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Physician",
+      "@id": "https://wildflowerwomenscenter.com/#physician",
+      "name": "Tina M. Gingrich, MD",
+      "honorificSuffix": "MD",
+      "medicalSpecialty": ["Gynecologic", "Obstetric"],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Saint Louis University School of Medicine"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "NPI",
+        "value": "1063472801"
+      },
+      "telephone": "+12142958675",
+      "url": "https://wildflowerwomenscenter.com/",
+      "worksFor": { "@id": "https://wildflowerwomenscenter.com/#clinic" }
+    },
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://wildflowerwomenscenter.com/#clinic",
+      "name": "Wildflower Women's Center",
+      "url": "https://wildflowerwomenscenter.com/",
+      "telephone": "+12142958675",
+      "faxNumber": "+18662072534",
+      "medicalSpecialty": ["Gynecologic", "Obstetric"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3122 Milrany Lane",
+        "addressLocality": "Melissa",
+        "addressRegion": "TX",
+        "postalCode": "75454",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.2900683,
+        "longitude": -96.5479624
+      },
+      "areaServed": ["Melissa, TX", "Anna, TX", "Princeton, TX", "Blue Ridge, TX", "Van Alstyne, TX"]
+    }
+  ]
+}
+</script>
+
+<style>
+/* ==========================================================================
+   Wildflower Women's Center — brand stylesheet
+   Deep plum/aubergine + blush + bone. Geometric sans, system stack only
+   (web fonts are banned by the zero-external-requests rule).
+   ========================================================================== */
+:root{
+  --ink:        #241029;  /* near-black plum — body text */
+  --plum:       #32123a;  /* deep aubergine — header, footer, dark panels */
+  --plum-soft:  #4c1f52;  /* secondary plum, hover/alt panels */
+  --wine:       #7a1b54;  /* CTA fill, link colour */
+  --wine-dk:    #5e1140;  /* CTA hover */
+  --blush:      #f1cfe0;  /* blush accent — spa section, chips */
+  --blush-dk:   #d89fbe;  /* blush border/rule */
+  --bone:       #faf6ee;  /* page background */
+  --bone-card:  #f3ece1;  /* card background */
+  --line:       #e4d3df;  /* hairline borders on bone */
+  --mut:        #6d5a6a;  /* muted text on bone */
+  --mut-on-dark:#cdb3c6;  /* muted text on plum */
+  --font: "Century Gothic", Futura, "Avant Garde", "URW Gothic", "Questrial", sans-serif;
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--bone); color:var(--ink);
+  font:16px/1.6 var(--font);
+}
+img{max-width:100%;}
+a{color:var(--wine); text-decoration:none;}
+a:hover{text-decoration:underline;}
+.wrap{max-width:1080px; margin:0 auto; padding-inline:20px;}
+section{padding-block:56px;}
+h1,h2,h3{margin:0 0 .4em; font-weight:700; letter-spacing:-0.01em;}
+.kicker{
+  display:block; font:700 12px/1 var(--font); letter-spacing:.22em; text-transform:uppercase;
+  color:var(--wine); margin-bottom:10px;
+}
+.kicker.on-dark{color:var(--blush);}
+p{margin:0 0 1em; max-width:62ch;}
+.lede{color:var(--mut); font-size:17px;}
+.btn{
+  display:inline-flex; align-items:center; gap:10px; font:700 15px/1 var(--font);
+  letter-spacing:.03em; text-transform:uppercase; padding:15px 26px; border-radius:999px;
+  text-decoration:none; border:2px solid transparent; white-space:nowrap;
+}
+.btn-primary{background:var(--wine); color:#fff;}
+.btn-primary:hover{background:var(--wine-dk); text-decoration:none;}
+.btn-ghost{border-color:var(--blush-dk); color:var(--plum);}
+.btn-ghost:hover{background:var(--blush); text-decoration:none;}
+.btn svg{width:18px; height:18px; flex:none;}
+
+/* header */
+.site-header{
+  background:var(--plum); color:#fff; position:relative; z-index:5;
+}
+.site-header .wrap{
+  display:flex; align-items:center; justify-content:space-between; gap:16px;
+  padding-block:14px; flex-wrap:wrap;
+}
+.brand{display:flex; align-items:center; gap:10px; color:#fff;}
+.brand svg{width:34px; height:34px; flex:none;}
+.brand .word{font:700 18px/1.1 var(--font); letter-spacing:.01em;}
+.brand .word small{display:block; font:600 10px/1 var(--font); letter-spacing:.18em; text-transform:uppercase; color:var(--blush-dk);}
+.hdr-actions{display:flex; align-items:center; gap:18px; flex-wrap:wrap;}
+.hdr-phone{display:flex; align-items:center; gap:8px; color:#fff; font:700 16px/1 var(--font);}
+.hdr-phone svg{width:18px; height:18px;}
+nav.primary{display:none;}
+@media (min-width:780px){
+  nav.primary{display:flex; gap:22px; font:600 13px/1 var(--font); letter-spacing:.04em; text-transform:uppercase;}
+  nav.primary a{color:var(--mut-on-dark);}
+  nav.primary a:hover{color:#fff; text-decoration:none;}
+}
+
+/* hero */
+.hero{
+  background:linear-gradient(160deg, var(--plum) 0%, var(--plum) 52%, var(--plum-soft) 100%);
+  color:#fff; padding-block:64px 72px; overflow:hidden; position:relative;
+}
+.hero .wrap{display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center;}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;}}
+.hero h1{font-size:clamp(30px,5vw,46px); line-height:1.1; color:#fff;}
+.hero .lede{color:var(--mut-on-dark); font-size:18px; max-width:46ch;}
+.hero .actions{display:flex; gap:14px; flex-wrap:wrap; margin-top:22px;}
+.hero .place{
+  margin-top:26px; display:flex; gap:10px; align-items:flex-start; color:var(--mut-on-dark); font-size:14.5px;
+}
+.hero .place svg{width:18px; height:18px; flex:none; margin-top:2px;}
+
+/* botanical divider */
+.sprig{display:block; width:100%; height:22px; margin:0 auto;}
+
+/* photo slots */
+.photo-slot{
+  border:2px dashed var(--blush-dk); border-radius:16px; background:var(--bone-card);
+  display:flex; align-items:center; justify-content:center; text-align:center;
+  padding:28px 18px; color:var(--mut); font:600 13px/1.5 var(--font); letter-spacing:.02em;
+  min-height:200px;
+}
+.hero .photo-slot{background:rgba(255,255,255,.06); border-color:rgba(241,207,224,.55); color:var(--mut-on-dark); min-height:260px;}
+
+/* relocation strip */
+.relocation{background:var(--bone-card); border-bottom:1px solid var(--line);}
+.relocation .grid{display:grid; grid-template-columns:1.3fr .7fr; gap:36px;}
+@media (max-width:780px){.relocation .grid{grid-template-columns:1fr;}}
+.relocation h2{font-size:clamp(24px,3.4vw,32px); color:var(--plum);}
+.area-list{list-style:none; margin:14px 0 0; padding:0; display:flex; flex-wrap:wrap; gap:8px;}
+.area-list li{
+  background:var(--blush); color:var(--plum); font:700 12.5px/1 var(--font); letter-spacing:.04em;
+  padding:8px 14px; border-radius:999px;
+}
+.addr-card{background:var(--bone); border:1px solid var(--line); border-radius:16px; padding:22px;}
+.addr-card .line{display:flex; gap:10px; align-items:flex-start; margin-bottom:12px; font-size:15px;}
+.addr-card svg{width:19px; height:19px; flex:none; margin-top:2px; color:var(--wine);}
+.addr-card a{color:var(--ink); font-weight:700;}
+
+/* services */
+.care h2, .spa h2, .doctor h2{font-size:clamp(24px,3.6vw,34px);}
+.svc-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; margin-top:28px;}
+.svc-card{
+  background:#fff; border:1px solid var(--line); border-radius:14px; padding:20px 22px;
+}
+.svc-card h3{font-size:16px; letter-spacing:.02em; color:var(--plum); margin-bottom:8px;}
+.svc-card ul{margin:0; padding-left:18px; color:var(--mut); font-size:14.5px; line-height:1.7;}
+.svc-card li{margin:2px 0;}
+
+/* medical spa — its own register: warmer, blush-forward, a little more lift */
+.spa{background:linear-gradient(180deg, var(--blush) 0%, #f7e3ec 100%);}
+.spa .wrap{position:relative;}
+.spa .tag-note{
+  background:#fff; border:1px solid var(--blush-dk); border-radius:14px; padding:16px 20px;
+  color:var(--plum); font-size:14.5px; margin-top:10px; max-width:58ch;
+}
+.spa .svc-card{background:#fffdfb; border-color:var(--blush-dk);}
+.spa .svc-card h3{color:var(--wine-dk);}
+
+/* doctor */
+.doctor .wrap{display:grid; grid-template-columns:.8fr 1.2fr; gap:40px; align-items:start;}
+@media (max-width:780px){.doctor .wrap{grid-template-columns:1fr;}}
+.doctor .photo-slot{min-height:320px;}
+.credentials{list-style:none; margin:18px 0 0; padding:0; display:grid; gap:10px;}
+.credentials li{
+  display:flex; gap:10px; font-size:14.5px; color:var(--ink); background:var(--bone-card);
+  border-radius:10px; padding:10px 14px;
+}
+.credentials svg{width:18px; height:18px; flex:none; color:var(--wine); margin-top:1px;}
+
+/* visit / contact */
+.visit{background:var(--plum); color:#fff;}
+.visit h2{color:#fff; font-size:clamp(24px,3.6vw,34px);}
+.visit .grid{display:grid; grid-template-columns:1fr 1fr 1fr; gap:28px; margin-top:30px;}
+@media (max-width:860px){.visit .grid{grid-template-columns:1fr;}}
+.visit-card{background:rgba(255,255,255,.06); border:1px solid rgba(241,207,224,.28); border-radius:16px; padding:22px;}
+.visit-card h3{font:700 13px/1 var(--font); letter-spacing:.1em; text-transform:uppercase; color:var(--blush); margin-bottom:14px;}
+.visit-card .line{display:flex; gap:10px; align-items:flex-start; margin-bottom:10px; font-size:15px; color:#fff;}
+.visit-card svg{width:18px; height:18px; flex:none; margin-top:2px; color:var(--blush);}
+.visit-card a{color:#fff; font-weight:700;}
+.visit-card .mut{color:var(--mut-on-dark); font-size:13.5px; margin-top:4px;}
+.bracket{
+  display:inline-block; color:#fff; background:rgba(255,255,255,.08); border:1px dashed var(--blush-dk);
+  border-radius:8px; padding:3px 9px; font-size:13.5px; font-weight:700;
+}
+.portal-links{list-style:none; margin:0; padding:0; display:grid; gap:8px;}
+.portal-links a{color:#fff; font-weight:700; display:flex; align-items:center; gap:8px; font-size:14.5px;}
+.portal-links svg{width:16px; height:16px; flex:none; color:var(--blush);}
+.portal-links .mut{display:block; color:var(--mut-on-dark); font-weight:400; font-size:12.5px; margin-top:1px;}
+
+/* sticky mobile call bar */
+.call-bar{
+  display:none; position:fixed; left:0; right:0; bottom:0; z-index:20;
+  background:var(--wine); padding:12px max(14px, env(safe-area-inset-left)) calc(12px + env(safe-area-inset-bottom, 0px)) max(14px, env(safe-area-inset-right));
+  box-shadow:0 -6px 18px rgba(36,16,41,.22);
+}
+.call-bar a{
+  display:flex; align-items:center; justify-content:center; gap:10px; color:#fff;
+  font:700 15px/1 var(--font); letter-spacing:.03em; text-transform:uppercase;
+}
+.call-bar svg{width:18px; height:18px;}
+@media (max-width:640px){
+  .call-bar{display:block;}
+  body{padding-bottom:64px;}
+}
+
+/* footer */
+footer.site-footer{background:var(--ink); color:var(--mut-on-dark); font-size:13px; padding-block:26px;}
+footer.site-footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:center;}
+footer.site-footer a{color:#fff;}
+footer.site-footer .fb{display:inline-flex; align-items:center; gap:6px;}
+footer.site-footer svg{width:15px; height:15px;}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><g fill="#F1CFE0"><circle cx="16" cy="9.2" r="3.3"/><circle cx="23" cy="14" r="3.3"/><circle cx="20.3" cy="22" r="3.3"/><circle cx="11.7" cy="22" r="3.3"/><circle cx="9" cy="14" r="3.3"/></g><circle cx="16" cy="16" r="3" fill="#7A1B54"/></svg>
+      <span class="word">Wildflower Women&rsquo;s Center<small>Melissa, Texas</small></span>
+    </div>
+    <nav class="primary">
+      <a href="#care">Gynecology &amp; Surgery</a>
+      <a href="#spa">Medical Spa</a>
+      <a href="#doctor">Dr. Gingrich</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="hdr-actions">
+      <a class="hdr-phone" href="tel:+12142958675">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (214) 295-8675
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="kicker on-dark">OB/GYN &middot; Minimally Invasive Surgery &middot; Medical Spa</span>
+      <h1>Women&rsquo;s health care, now rooted in Melissa.</h1>
+      <p class="lede">Dr. Tina M. Gingrich, MD, a board-certified OB/GYN, sees patients at our permanent Melissa office &mdash; gynecology and surgical care on one side of the practice, the Wildflower Medical Spa on the other.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="tel:+12142958675">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call to Schedule
+        </a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=3122+Milrany+Lane%2C+Melissa%2C+TX+75454" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Get Directions
+        </a>
+      </div>
+      <div class="place">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>3122 Milrany Lane, Melissa, TX 75454</span>
+      </div>
+    </div>
+    <div class="photo-slot" role="img" aria-label="Photo placeholder">
+      [ Photo: the new Melissa office, exterior ]
+    </div>
+  </div>
+</section>
+
+<section class="relocation">
+  <div class="wrap grid">
+    <div>
+      <span class="kicker">A Permanent Home in Melissa</span>
+      <h2>We moved &mdash; and we&rsquo;re staying.</h2>
+      <p>Wildflower Women&rsquo;s Center has established its permanent presence in Melissa, Texas. We&rsquo;re grateful to the patients who first knew us in McKinney and Allen, and we&rsquo;ve carried that same care into our new office &mdash; right here in the neighborhood.</p>
+      <p class="lede">Now seeing patients from:</p>
+      <ul class="area-list">
+        <li>Melissa</li><li>Anna</li><li>Princeton</li><li>Blue Ridge</li><li>Van Alstyne</li>
+      </ul>
+    </div>
+    <div class="addr-card">
+      <div class="line">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>3122 Milrany Lane<br>Melissa, TX 75454</span>
+      </div>
+      <div class="line">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <a href="tel:+12142958675">(214) 295-8675</a>
+      </div>
+      <div class="line">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        <span>Fax (866) 207-2534</span>
+      </div>
+      <div class="line" style="margin-bottom:0">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <span>Hours: <span class="bracket" style="color:var(--ink); border-color:var(--blush-dk); background:var(--blush)">[ Confirm current hours ]</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="care" id="care">
+  <div class="wrap">
+    <span class="kicker">Gynecology &amp; Surgery</span>
+    <h2>Clinical care, close to home.</h2>
+    <p class="lede">Dr. Gingrich provides well-woman and surgical gynecologic care for patients across Melissa and the surrounding towns.</p>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <h3>Well-Woman &amp; Preventive Care</h3>
+        <ul>
+          <li>Annual well-woman exams</li>
+          <li>PAP smears</li>
+          <li>Colposcopy</li>
+          <li>Endometrial biopsy</li>
+          <li>Pelvic ultrasound</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>Pregnancy Confirmation</h3>
+        <ul>
+          <li>Pregnancy confirmation</li>
+          <li>Early dating ultrasound</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>Hormonal &amp; Contraceptive Care</h3>
+        <ul>
+          <li>LARC (long-acting reversible contraception)</li>
+          <li>Hormone replacement therapy (HRT)</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>Minimally Invasive Surgery</h3>
+        <ul>
+          <li>Hysteroscopy with D&amp;C</li>
+          <li>LEEP</li>
+          <li>Myomectomy</li>
+          <li>Cystectomy</li>
+          <li>Hysterectomy</li>
+          <li>Sterilization</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="spa" id="spa">
+  <div class="wrap">
+    <span class="kicker">A Different Register &mdash; Aesthetics</span>
+    <h2>Wildflower Medical Spa</h2>
+    <p class="lede">The aesthetic side of the practice &mdash; same office, same team, inside Wildflower Women&rsquo;s Center in Melissa. If a link brought you here looking for the spa, you&rsquo;re in the right place.</p>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <h3>Body Contouring</h3>
+        <ul>
+          <li>CoolSculpting</li>
+          <li>Supervised weight loss</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>Injectables &amp; Skin</h3>
+        <ul>
+          <li>Injectables &amp; fillers</li>
+          <li>Threads</li>
+          <li>Chemical peel</li>
+          <li>Microneedling</li>
+          <li>Sylfirm X RF microneedling</li>
+          <li>Laser hair removal</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>Regenerative &amp; Wellness</h3>
+        <ul>
+          <li>Exosomes</li>
+          <li>PRF</li>
+          <li>Bio-identical hormones</li>
+          <li>IV &amp; subcutaneous nutrition</li>
+        </ul>
+      </div>
+    </div>
+    <p class="tag-note">Two different kinds of visits, one practice: clinical gynecologic care on one side, aesthetic and wellness services on the other. Call the same number for either.</p>
+  </div>
+</section>
+
+<section class="doctor" id="doctor">
+  <div class="wrap">
+    <div class="photo-slot" role="img" aria-label="Photo placeholder">
+      [ Portrait: Dr. Gingrich ]
+    </div>
+    <div>
+      <span class="kicker">Your Physician</span>
+      <h2>Tina M. Gingrich, MD</h2>
+      <p class="lede">Board-certified by the American Board of Obstetrics and Gynecology (ABOG), with a primary specialty in obstetrics &amp; gynecology and additional training in family medicine. A graduate of Saint Louis University School of Medicine.</p>
+      <ul class="credentials">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"/></svg>
+          <span>Board-certified &mdash; American Board of Obstetrics and Gynecology (ABOG)</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          <span>Saint Louis University School of Medicine</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 2v4M17 2v4M3 10h18"/></svg>
+          <span>NPI 1063472801 &middot; Obstetrics &amp; Gynecology, Family Medicine</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <span class="kicker on-dark">Visit the Melissa Office</span>
+    <h2>Call, or find us.</h2>
+    <div class="grid">
+      <div class="visit-card">
+        <h3>Contact</h3>
+        <div class="line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+12142958675">(214) 295-8675</a>
+        </div>
+        <div class="line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <span>Fax (866) 207-2534</span>
+        </div>
+        <p class="mut">No email on file for the practice &mdash; calling is the fastest way to reach us.</p>
+      </div>
+      <div class="visit-card">
+        <h3>Office</h3>
+        <div class="line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>3122 Milrany Lane<br>Melissa, TX 75454</span>
+        </div>
+        <a class="btn btn-ghost" style="margin-top:8px; border-color:var(--blush); color:#fff" href="https://www.google.com/maps/search/?api=1&amp;query=3122+Milrany+Lane%2C+Melissa%2C+TX+75454" target="_blank" rel="noopener">Get Directions</a>
+        <p class="mut" style="margin-top:14px">Hours: <span class="bracket">[ Confirm current hours ]</span></p>
+      </div>
+      <div class="visit-card">
+        <h3>Existing Patients</h3>
+        <ul class="portal-links">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 4v4"/></svg>
+            <a href="https://portal-app.praxisemr.com" target="_blank" rel="noopener">Patient Portal<span class="mut">Praxis EMR</span></a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2h6l3 7-6 13L6 9z"/></svg>
+            <a href="https://pathgroup.luminatehealth.com" target="_blank" rel="noopener">Lab Results<span class="mut">Luminate</span></a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+            <a href="https://patientops.com" target="_blank" rel="noopener">Pay Your Bill<span class="mut">PatientOps</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Wildflower Women&rsquo;s Center &middot; 3122 Milrany Lane, Melissa, TX 75454 &middot; <a href="tel:+12142958675">(214) 295-8675</a></span>
+    <a class="fb" href="https://facebook.com/wildflowerwomenscenter22" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7h2.4l.4-2.8h-2.8V9.4c0-.8.2-1.4 1.5-1.4h1.5V5.1c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.1H7.7V14h2.4v7z"/></svg>
+      Facebook
+    </a>
+  </div>
+</footer>
+
+<div class="call-bar">
+  <a href="tel:+12142958675">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call (214) 295-8675
+  </a>
+</div>
+
+</body>
+</html>
